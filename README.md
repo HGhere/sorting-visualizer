@@ -18,10 +18,6 @@ Simple implementation of sort algorithms visualisation in Java
 
 ![Selection Sort](https://media.giphy.com/media/VOgRZ9c1X1RPalCvAq/giphy.gif)
 
-- Radix Sort LSD (O(nw) where w is the average key length measured in number of digits)
-
-![Radix Sort LSD](https://media.giphy.com/media/Ow5AYXN96CzUVU5fHK/giphy.gif)
-
 - Insertion Sort (O(n²))
 
 ![Insertion Sort](https://media.giphy.com/media/80JKroL0cIReZbeIcd/giphy.gif)
