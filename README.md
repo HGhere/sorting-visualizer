@@ -58,7 +58,6 @@ src/
 - Bar height corresponds to the value of the element
 - Sorting algorithms perform comparisons and swaps
 - After each significant operation, the UI is updated to visualize changes
-- Sorting runs on a background thread
 - A shared volatile stop flag is used to safely stop sorting when requested
 
 ---
