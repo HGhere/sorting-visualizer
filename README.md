@@ -1,23 +1,77 @@
-# Sort Visualizer
+# Sorting Algorithm Visualizer (JavaFX)
 
-Simple implementation of sort algorithms visualisation in Java
+A JavaFX-based desktop application that visually demonstrates how classic sorting algorithms work step by step using animated bars.
 
-- Merge Sort O(nlog(n))
+This project focuses on algorithm visualization, multithreading, and UI responsiveness, not just producing sorted output.
 
-![Merge Sort](https://media.giphy.com/media/z04RxoKxTlUvGjjuUn/giphy.gif)
+## Screenshots
 
-- Quick Sort O(nlog(n)) (O(n²) for the worst case if you choose the bad pivot)
+### Before Sorting
+![Before Sorting](images/before.png)
 
-![Quick Sort](https://media.giphy.com/media/n7tayGmz2u4DSp6JQ7/giphy.gif)
+### During Sorting
+![During Sorting](images/during.png)
 
-- Bubble Sort (O(n²))
+### After Sorting
+![After Sorting](images/after.png)
 
-![Bubble Sort](https://media.giphy.com/media/7fe1QPrA4wTFXjk6NG/giphy.gif)
 
-- Selection Sort (O(n²))
+## Features
+- Visualizes sorting algorithms using animated bars
+- Implemented sorting algorithms:
+  - Bubble Sort
+  - Insertion Sort
+  - Selection Sort
+  - Merge Sort
+  - Quick Sort
+- Runs sorting logic on a background thread to keep the UI responsive
+- Safe UI updates using JavaFX Application Thread
+- Stop and Shuffle controls to interrupt sorting gracefully
 
-![Selection Sort](https://media.giphy.com/media/VOgRZ9c1X1RPalCvAq/giphy.gif)
+---
 
-- Insertion Sort (O(n²))
+## Technologies Used
+- Java
+- JavaFX
+- Multithreading
+- Sorting Algorithms
+- Object-Oriented Programming
 
-![Insertion Sort](https://media.giphy.com/media/80JKroL0cIReZbeIcd/giphy.gif)
+---
+
+## Project Structure
+src/
+├── SortVisualizerFX.java
+├── SortAlgorithm.java
+├── StopFlag.java
+├── BubbleSort.java
+├── InsertionSort.java
+├── SelectionSort.java
+├── MergeSort.java
+└── QuickSort.java
+
+
+---
+
+## How It Works
+- Array elements are represented as vertical bars
+- Bar height corresponds to the value of the element
+- Sorting algorithms perform comparisons and swaps
+- After each significant operation, the UI is updated to visualize changes
+- Sorting runs on a background thread
+- A shared volatile stop flag is used to safely stop sorting when requested
+
+---
+
+## How to Run
+1. Install **JDK 17+**
+2. Download **JavaFX SDK**
+3. Compile and run:
+
+```bash
+javac --module-path /path/to/javafx/lib --add-modules javafx.controls -d out src/*.java
+java --module-path /path/to/javafx/lib --add-modules javafx.controls -cp out SortVisualizerFX
+
+
+Author
+Harshit Garg
