@@ -2,7 +2,7 @@
 
 A JavaFX-based desktop application that visually demonstrates how classic sorting algorithms work step by step using animated bars.
 
-This project focuses on algorithm visualization, multithreading, and UI responsiveness, not just producing sorted output.
+This project focuses on algorithm visualization and UI responsiveness, not just producing sorted output.
 
 ## Screenshots
 
